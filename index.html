@@ -11,21 +11,27 @@
 
     <title>AppValue</title>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/aos.css" type="text/css">
+
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 
     <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" href="font-awesome/css/all.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,365 +44,375 @@
 
 
 <body id="page-top">
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
             <a class="navbar-brand page-scroll" href="#page-top">AppValue</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
-  <header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1>Open New Perspectives</h1>
-            <hr>
-            <p></p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-        </div>
-    </div>
-</header>
-
-  <section class="bg-primary" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">About us</h2>
-                <hr class="light">
-                <p class="text-faded">AppValue is a company with focus on delivering high quality system architectures, development and consultancy for dedicated business verticals. Our core mission implies innovative high performance services and added value for our customers.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a data-id="about" class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-id="services" class="nav-link page-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-id="contact" class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+</div
+      <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" data-id="hero">
+        <img src="assets/images/hero.jpg" alt="" data-aos="fade-in" data-aos-duration="1000">
+
+        <div class="container d-flex flex-column align-items-center">
+        <h2 data-aos="fade-up" data-aos-delay="100">INNOVATE. INTEGRATE. SUCCEED.</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+            System architecture, enterprise software, and consulting that drive measurable results.
+        </p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="#about" class="btn btn-primary btn-xl page-scroll" style="background-color: #C50038;">Find Out More</a>
+        </div>
+        </div>
+    </section>
+    <!-- /Hero Section -->
+
+
+
+  
+
+  <section id="about" data-id="about" class="py-3 py-md-5 py-xl-8">
+  <div class="container section-title">
+	<h2 class="fs-5 mb-2 text-secondary text-uppercase">About us</h2>
+	<p class="display-5 mb-4 mb-md-5 mb-xl-8"><strong class="text-gradient">Innovation</strong>, implemented.</p>
+    <div class="row g-6" data-aos="fade-up" data-aos-delay="110">
+        <div class="col-lg-6 pr-2">
+            <img class="img-fluid rounded-4 mb-4" src="assets/images/digital-transformation.png" alt="">
+            <p>
+                At <strong>AppValue</strong>, we help businesses unlock the full potential of technology. 
+                Our mission is to guide organizations through the complexities of digital transformation, making 
+                innovation both accessible and impactful.
+            </p>
+            <p>
+                We specialize in <strong>cloud-native platforms</strong> like <strong>OpenShift</strong> and 
+                <strong>AI-driven solutions</strong> that empower companies to operate with greater agility, 
+                scalability, and intelligence. Whether it’s modernizing infrastructure, accelerating application 
+                development, or integrating AI into daily operations, we ensure every step is seamless and strategically aligned.
+            </p>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="260">
+            <p>
+                What sets us apart is our dual focus: we bring the vision of innovation together with the 
+                practical expertise needed to implement it. This balance allows us to transform ambitious ideas 
+                into sustainable solutions that drive real business value.
+            </p>
+            <blockquote class="blockquote mt-4">
+                <p class="fw-bold fs-5 mb-0">
+                    With us, technology doesn’t just support your business — it fuels growth, speeds innovation, and drives you forward.
+                </p>
+            </blockquote>
+            <img class="img-fluid rounded-4 mb-4" src="assets/images/office-teamwork.jpg" alt="">
+        </div>
     </div>
+  </div>
 </section>
+  <section id="services" data-id="services" class="py-3 py-md-5 py-xl-8">
+  <div class="container section-title">
+	<h2 class="fs-5 mb-2 text-secondary text-uppercase">Our Services</h2>
+	<p class="display-5 mb-4 mb-md-5 mb-xl-8">Future-ready, through <strong class="text-gradient">cloud</strong> and <strong class="text-gradient">AI</strong>.</p>
+    
+    <!-- Services Grid -->
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+      <!-- Cloud Transformation -->
+      <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-cloud-arrow-up fs-3 text-white"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Cloud Transformation</h5>
+          <p class="text-muted small">
+            Modernize, accelerate, and scale with cloud-native platforms like OpenShift, designed to give your business the agility to adapt quickly and the resilience to grow with confidence. From infrastructure to applications, we ensure your cloud journey delivers lasting impact.
+          </p>
+        </div>
+      </div>
 
-  <section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Our Services</h2>
-                <hr class="primary">
-            </div>
+      <!-- AI & Intelligent Automation -->
+      <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-cpu fs-3 text-white"></i>
+          </div>
+          <h5 class="fw-bold mb-2">AI & Automation</h5>
+          <p class="text-muted small">
+            Unlock the power of your data with AI-driven solutions that deliver predictive insights, intelligent automation, and smarter decision-making. From streamlining operations to creating new opportunities, we help you turn complexity into clarity.
+          </p>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-layer-group wow bounceIn text-primary"></i>
-                    <h3>Software architectures</h3>
-                    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Context-driven architectures</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Agile and DevOps methodologies</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Traditional and cloud environments</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Software development</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Java EE</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Spring/Spring Boot</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Apache Camel</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Angular</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>BPMN (Workflows)</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-random wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Agile integration</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Distributed integration</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Containers</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>APIs</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-sync wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Applications modernization</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Embrace new technologies</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Migrate from monolith apps to microservices</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-	</div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-handshake wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Consultancy</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Openshift Container Platform</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Red Hat JBoss EAP</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Red Hat Fuse</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Red Hat AMQ</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Red Hat AMQ Streams</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Red Hat Process Automation Manager</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-shield-alt wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Container stack security</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Image vulnerabilities and compliance</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Container runtime protection</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Registry security</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Visibility and Compliance</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-bug wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>System testing</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Functional tests</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Regression tests</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Performance tests</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Stress tests</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Load tests</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-graduation-cap wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Trainings & Workshops</h3>
-		    <div class="text-muted text-left">
-			<ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Java EE</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Apache Camel</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Spring</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Testing</li>
-			  <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Custom trainings</li>
-			</ul>
-		    </div>
-                </div>
-            </div>
+      </div>
+
+      <!-- Digital Innovation & Integration -->
+      <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-diagram-3 fs-3 text-white"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Digital Innovation</h5>
+          <p class="text-muted small">
+            Bring emerging technologies into your ecosystem without disruption. We integrate cloud, AI, and modern platforms seamlessly into your operations, ensuring that innovation fuels growth while keeping your business running smoothly day-to-day.
+          </p>
         </div>
+      </div>
+
+      <!-- Strategic Advisory & Enablement -->
+      <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-people fs-3 text-white"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Strategic Advisory</h5>
+          <p class="text-muted small">
+            Technology is only part of the journey — success requires the right strategy. We provide guidance, training, and ongoing support to empower your teams, align technology with business goals, and ensure your transformation is built to last.
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
   
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Get In Touch!</h2>
-                <hr class="primary">
+<section id="contact" data-id="contact" class="py-3 py-md-5 py-xl-8">
+  <div class="container section-title">
+	<h2 class="fs-5 mb-2 text-secondary text-uppercase xyz">Contact</h2>
+	<p class="display-5 mb-4 mb-md-5 mb-xl-8"><strong class="text-gradient">Get in touch</strong>.<br/>Transform your business.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center">
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="row justify-content-xl-center">
+          <div class="col-12 col-xl-11">
+            <div class="mb-4 mb-md-5">
+              <div class="mb-3 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" style="color: #C50038" class="bi bi-geo" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="mb-2">Office</h4>
+                <hr class="w-50 mb-3 border-dark-subtle">
+                <address class="m-0 text-secondary">9A Bilciuresti Street, 2nd Floor, Bucharest, District 1, Romania 014012</address>
+              </div>
             </div>
-	</div>
-<div class="row">
-  <div class="col-md-4 col-lg-offset-2">
-			<div class="coltext-left">
-			    <i class="fas fa-2x fa-map-marker-alt wow bounceIn" data-wow-delay=".1s"></i>
-			    <p>9A Bilciuresti Street, 2nd Floor, Bucharest, <br/>District 1, Romania 014012</p>
-			</div>
-			<div class="col text-left">
-			    <i class="fas fa-2x fa-percentage wow bounceIn" data-wow-delay=".1s"></i>
-			    <p>RO9224427</p>
-			</div>
-  </div>
-  <div class="col-md-4 col-lg-offset-2">
-			<div class="col text-left">
-			    <a href="mailto:office@appvalue.ro">
-			    	<i class="fas fa-2x fa-envelope wow bounceIn" data-wow-delay=".1s"></i>
-				<p>office@appvalue.ro</p>
-			    </a>
-			</div>
-			<div class="col text-left">
-			    <a href="https://twitter.com/appvalue2">
-			    	<i class="fab fa-2x fa-twitter wow bounceIn" data-wow-delay=".1s"></i>
-				<p>AppValue</p>
-			    </a>
-			</div>
-  </div>
-</div>
+            <div class="row mb-sm-4 mb-md-5">
+              <div class="col-12 col-sm-6">
+                <div class="mb-4 mb-sm-0">
+                  <div class="mb-3 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" style="color: #C50038" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="mb-2">Phone</h4>
+                    <hr class="w-75 mb-3 border-dark-subtle">
+                    <p class="mb-0">
+                      <a class="link-secondary text-decoration-none" href="tel:+40213213749">+4 021 3213749</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="mb-4 mb-sm-0">
+                  <div class="mb-3 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" style="color: #C50038" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                      <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                      <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="mb-2">Email</h4>
+                    <hr class="w-75 mb-3 border-dark-subtle">
+                    <p class="mb-0">
+                      <a class="link-secondary text-decoration-none" href="mailto:office@appvalue.ro">office@appvalue.ro</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="border overflow-hidden">
+
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+              <div class="col-12 col-md-6">
+                <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="fullname" name="fullname" required>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                  </span>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+              </div>
+
+              <div class="col-12">
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success Message (hidden by default) -->
+          <div id="form-success" class="alert alert-success mt-4 d-none" role="alert">
+            Thank you! Your message has been sent successfully.
+          </div>
+
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-  <div style="background-color: #BECFD7; padding-bottom: 20px;" class="text-center">© AppValue, 2025. All rights reserved. <a style="padding-left: 22px;" href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy statement</a> <span style="padding-left: 5px;"> | </span> <a style="padding-left: 5px;"  href="#" data-toggle="modal" data-target="#modalTerms">Terms of use</a></div>
+    <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #1a1c21">
 
-<!--Modal: Name-->
-<div class="modal fade" id="modalPrivacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+    <!-- Section: Links  -->
+    <section class="py-1">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <div class="align-text-top pb-2" style="font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 26px;">AppValue</div>
+            <p>9A Bilciuresti Street, 2nd Floor, Bucharest, District 1, Romania 014012</p>
+            <p><strong>Email:</strong> office@appvalue.ro</p>
+            <p><strong>Phone:</strong> +4 021 3213749</p>
+          </div>
+          <!-- Grid column -->
 
-    <!--Content-->
-    <div class="modal-content">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2  mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="fw-bold">Useful links</h6>
+            <hr
+                class="mb-3 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <ul class="footer-ul">
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#about">About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#services">Our Services</a></li>
+            </ul>
+          </div>
+          <!-- Grid column -->
 
-      <!--Body-->
-      <div class="modal-body mb-0 p-0">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="fw-bold">Our Services</h6>
+            <hr
+                class="mb-3 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <ul class="footer-ul">
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#services">Cloud Transformation</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#services">AI & Automation</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#services">Digital Innovation</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a class="page-scroll" href="#services">Strategic Advisory</a></li>
+            </ul>
+          </div>
+          <!-- Grid column -->
 
-<div class="text-center" style="font-size: 20px; font-weight: bold;">AppValue Privacy Notice</div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="fw-bold">Our Partnerships</h6>
+            <hr
+                class="mb-3 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
 
-	<div class="text-center"><p class="p-modal">August 2025</p></div>
+            <!-- Right side: partnerships -->
+            <div class="col-md-6 text-center text-md-end">
+              <div class="d-flex flex-column justify-content-center justify-content-md-end align-items-center align-items-md-end gap-2">                <img src="assets/images/rh-logo.svg" 
+                    alt="Red Hat Advanced Partner" 
+                    height="40">
+                <img src="assets/images/ibm-logo.svg" 
+                    alt="IBM Advanced Partner" 
+                    height="100">
+              </div>
+            </div>
 
-	<div class="text-muted text-left" style="padding-top: 10px;">
-		<p class="p-modal">
-		AppValue Networks SRL (from herein AppValue) is a company with focus on delivering high quality system architectures, development and consultancy for dedicated business verticals. Headquarter is located in 9A Bilciuresti Street, 2nd Floor, Bucharest, District 1, Romania 014012.
-		</p>
-		<p class="p-modal">
-		AppValue acts as Controller in respect with data protection European and local legislation.
-		</p>
-		<p class="p-modal">
-		If you are a visitor of our website, we may collect and process your business contact details after your voluntary registration with one of our events. Data collection is performed by email.
-		</p>
-		<p class="p-modal">
-		We may process your business contact data after an event and only if you had previously agreed to receive marketing information regarding products and services of interest. We perform this type of processing only with your consent. You can subscribe at any time using the link in the registration email.
-		</p>
-		<p class="p-modal">
-		We may also collect and process aggregated website data such as public IP addresses, geographic areas and preferences (if available) so that we ensure a better experience online for our visitors.
-		</p>
-		<p class="p-modal">
-		We process the above data as long as is needed for the execution of the mentioned scopes.
-		</p>
-		<p class="p-modal">
-		If our customer or a business partner, any personal data that we may collect and process for the execution of contractual agreements or development of business relationships shall be subject to specific data protection clauses and non-disclosure agreements between parties. This Privacy Notice does not cover this type of processing.
-		</p>
-		<p class="p-modal">
-		Personal data collected by AppValue shall not be subject to transfer without your consent.
-		</p>
-		<p class="p-modal">
-		As data subject, you have the following rights related to your personal data:
-		  <ul>
-		    <li>The right to be informed</li>
-		    <li>The right to access</li>
-		    <li>The right to rectification</li>
-		    <li>The right to erasure</li>
-		    <li>The right to restrict processing</li>
-		    <li>The right to data portability</li>
-		    <li>The right to object</li>
-		    <li>Rights in relation to automated decision making and profiling</li>
-		  </ul>
-		</p>
-		<p class="p-modal">
-		You also have the right to contact national data protection authority at <a href="http://www.dataprotection.ro">www.dataprotection.ro</a>. For any information regarding protection of your personal data, you may contact us at <a href="mailto:office@appvalue.ro">office@appvalue.com</a>.
-		</p>
-	</div>
+          </div>
+          <!-- Grid column -->
 
+        </div>
+        <!-- Grid row -->
       </div>
+    </section>
+    <!-- Section: Links  -->
 
-      <!--Footer-->
-      <div class="modal-footer justify-content-center">
-
-        <button type="button" class="btn btn-outline-default btn-md" data-dismiss="modal">Close<i class="fas fa-times ml-2"></i></button>
-
-      </div>
-
+    <!-- Copyright -->
+    <div class="text-center py-5" style="background-color: #1a1c21">
+      © 2025 AppValue.ro All Rights Reserved.
     </div>
-    <!--/.Content-->
-
-  </div>
-</div>
-<!--Modal: Name-->
-
-<!--Modal: Name-->
-<div class="modal fade" id="modalTerms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-
-    <!--Content-->
-    <div class="modal-content">
-
-      <!--Body-->
-      <div class="modal-body mb-0 p-0">
-
-	<div class="text-center" style="font-size: 20px; font-weight: bold;">AppValue Terms and Conditions</div>
-
-	<div class="text-center"><p class="p-modal">August 2025</p></div>
-	<div class="text-muted text-left" style="padding-top: 10px;">
-	<p class="p-modal">
-	The website www.appvalue.ro belongs to AppValue Networks SRL (AppVAlue) with headquarter in 9A Bilciuresti Street, 2nd Floor, Bucharest, District 1, Romania 014012. Browsing AppValue website and accessing the content implies the full acceptance of our Terms and Conditions.
-	</p>
-	<p class="p-modal">
-	"Content" refers to the set of images, texts, animations, graphics, trademarks, logos, as well as other materials and information on this site. "Site" is the set of pages accessible on the Internet at www.appvalue.ro which contains information elements intended to promote the services, products and events organized by AppValue.
-	</p>
-	<p class="p-modal">
-	The content of the site and the related materials (presentations, studies, reports etc.) belong exclusively to AppValue and its business partners and are protected by copyright laws. Content may not be used, copied or republished, in whole or in part, without the express consent of the owner.
-	</p>
-	<p class="p-modal">
-	Content and site are informative only and do not generate contractual obligations. Content and site can be modified without prior notification.
-	</p>
-	<p class="p-modal">
-	Links to other sites do not imply in any way the responsibility for the content hosted on those sites or related technologies or products. 
-	</p>
-	</div>
-
-      </div>
-
-      <!--Footer-->
-      <div class="modal-footer justify-content-center">
-
-        <button type="button" class="btn btn-outline-default btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-2"></i></button>
-
-      </div>
-
-    </div>
-    <!--/.Content-->
-
-  </div>
-</div>
-<!--Modal: Name-->
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
   <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="assets/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<!-- script src="assets/js/bootstrap.min.js"></script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.fittext.js"></script>
+<script src="assets/js/wow.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
+<!-- script src="assets/js/creative.js"></script -->
 
+<!-- AOS -->
+<script src="assets/js/aos.js"></script>
+
+<!-- Main.js -->
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
